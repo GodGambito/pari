@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 150 14% 4%; /* #090D0B */
+  --foreground: 45 40% 98%;
+  --radius: 0.75rem;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: #090d0b;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  /* Optimización Mobile-First y PWA */
+  -webkit-tap-highlight-color: transparent;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Scrollbar sutil personalizado con tonos esmeralda y oro */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #064e3b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #047857;
+}
